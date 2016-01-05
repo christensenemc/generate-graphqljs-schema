@@ -1,0 +1,24 @@
+{
+  "name": "generate-graphqljs-schema",
+  "version": "1.0.0",
+  "description": "Simple CLI Tool for generating graphqljs boilerplate from a schema types file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christensenemc/generate-graphqljs-schema.git"
+  },
+  "keywords": [
+    "graphql",
+    "graphqljs",
+    "relay"
+  ],
+  "author": "Erik Christensen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/christensenemc/generate-graphqljs-schema/issues"
+  },
+  "homepage": "https://github.com/christensenemc/generate-graphqljs-schema#readme"
+}
