@@ -6,7 +6,7 @@ export default function(definition){
   return writeText( t => {
     t.line(renderPrimitiveDeps(definition));
     t.line(renderUserDeps(definition));
-    t.block(`const ${definition.name} = new GraphQLInterfaceType({`,o => {
+    t.block(`const ${definition.name}InterfaceType = new GraphQLInterfaceType({`,o => {
       o.line(`name: '${definition.name}',`);
       o.line(`description: 'TODO: describe interface ${definition.name}',`);
       o.block(`fields: () => ({`,fb => {
@@ -29,6 +29,6 @@ export default function(definition){
       },`})`);
     },`});`);
     t.line(``);
-    t.line(`export default ${definition.name};`)
+    t.line(`export default ${definition.name}InterfaceType;`)
   })
 }

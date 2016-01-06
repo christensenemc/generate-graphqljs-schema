@@ -18,7 +18,7 @@ export default function definitionsFromTypeString(typeString){
             }else if(ctx.name.value === 'Float'){
               return 'GraphQLFloat'
             }else{
-              return `${ctx.name.value}`
+              return `${ctx.name.value}Type`
             }
           }
         }

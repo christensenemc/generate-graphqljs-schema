@@ -23,7 +23,7 @@ export default function renderUserDeps(definition){
   
   let str = '';
   userDeps.forEach(dep => {
-    str += `import ${dep} from './${dep};'\n`
+    str += `import ${dep}Type from './${dep};'\n`
   });
   return str
 }

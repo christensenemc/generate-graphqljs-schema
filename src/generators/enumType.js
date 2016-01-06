@@ -4,7 +4,7 @@ export default function(definition){
   return writeText(t => {
     t.line(`import { GraphQLEnumType } from 'graphql/type'`);
     t.line(``);
-    t.block(`const ${definition.name} = new GraphQLEnumType({`,e => {
+    t.block(`const ${definition.name}Type = new GraphQLEnumType({`,e => {
       e.line(`name: '${definition.name}',`);
       e.line(`description: 'TODO: describe enum ${definition.name}',`);
       e.block(`values: {`,v => {
@@ -14,6 +14,6 @@ export default function(definition){
       },`}`);
     },`});`);
     t.line(``);
-    t.line(`export default ${definition.name}`);
+    t.line(`export default ${definition.name}Type`);
   });
 }

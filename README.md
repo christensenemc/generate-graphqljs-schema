@@ -41,37 +41,37 @@ import {
 } from 'graphql/type;'
 
 
-import Node from '../interfaces/Node;'
+import NodeInterfaceType from '../interfaces/Node;'
 
-const User = new GraphQLObjectType({
+const UserType = new GraphQLObjectType({
   name: 'User',
-  description: 'TODO: describe object User',
-  interfaces: [Node],
+  description: 'TODO: describe object UserType',
+  interfaces: [NodeInterfaceType],
   fields: () => ({
     id: {
       type: new GraphQLNonNull(GraphQLID),
-      description: 'TODO: describe field User.id',
+      description: 'TODO: describe field UserType.id',
       resolve(root){
         return root.id
       }
     },
     name: {
       type: new GraphQLNonNull(GraphQLString),
-      description: 'TODO: describe field User.name',
+      description: 'TODO: describe field UserType.name',
       resolve(root){
         return root.name
       }
     },
     age: {
       type: new GraphQLNonNull(GraphQLInt),
-      description: 'TODO: describe field User.age',
+      description: 'TODO: describe field UserType.age',
       resolve(root){
         return root.age
       }
     },
     friends: {
-      type: new GraphQLList(User),
-      description: 'TODO: describe field User.friends',
+      type: new GraphQLList(UserType),
+      description: 'TODO: describe field UserType.friends',
       resolve(root){
         return root.friends
       }
@@ -79,7 +79,7 @@ const User = new GraphQLObjectType({
   })
 });
 
-export default User;
+export default UserType;
 
 ```
 
