@@ -11,9 +11,7 @@ Currently generates GraphQLObjectTypes, GraphQLInterfaceTypes, and GraphQLEnumTy
 
 ##Usage
 
-given a typedef file:
-
-typedef.graphql
+given a typedef file at typedef.graphql:
 ```
 interface Node {
   id: ID!
@@ -31,9 +29,7 @@ type RootQuery {
 }
 ```
 
-generate graphljs code for those types:
-
- /types/User.js
+generate graphljs code for those types at /types/User.js:
 ```
 import {
   GraphQLID,
