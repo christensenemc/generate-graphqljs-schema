@@ -30,7 +30,7 @@ type RootQuery {
 ```
 
 generate graphljs code for those types at /types/User.js:
-```
+```js
 import {
   GraphQLID,
   GraphQLNonNull,
