@@ -31,7 +31,7 @@ function extractPrimitiveDepsIntoSet(type,set){
     set.add('GraphQLList');
   }
 
-  return set;  
+  return set;
 }
 
 export default function renderPrimitiveDeps(definition){
@@ -59,7 +59,7 @@ export default function renderPrimitiveDeps(definition){
   let str = '';
   str += `import {\n`
   str += `\t${Array.from(primitiveDeps).join(',\n\t')}\n`
-  str += `} from 'graphql/type;'\n`
+  str += `} from 'graphql/type';\n`
   return str
 }
 

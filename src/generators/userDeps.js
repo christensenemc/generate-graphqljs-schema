@@ -20,10 +20,10 @@ export default function renderUserDeps(definition){
   if(userDeps.has(definition.name)){
     userDeps.delete(definition.name);
   }
-  
+
   let str = '';
   userDeps.forEach(dep => {
-    str += `import ${dep}Type from './${dep};'\n`
+    str += `import ${dep}Type from './${dep}';\n`
   });
   return str
 }

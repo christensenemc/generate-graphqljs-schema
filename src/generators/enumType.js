@@ -2,7 +2,7 @@ import writeText from '../writeText';
 
 export default function(definition){
   return writeText(t => {
-    t.line(`import { GraphQLEnumType } from 'graphql/type'`);
+    t.line(`import { GraphQLEnumType } from 'graphql/type';`);
     t.line(``);
     t.block(`const ${definition.name}Type = new GraphQLEnumType({`,e => {
       e.line(`name: '${definition.name}',`);
@@ -14,6 +14,6 @@ export default function(definition){
       },`}`);
     },`});`);
     t.line(``);
-    t.line(`export default ${definition.name}Type`);
+    t.line(`export default ${definition.name}Type;`);
   });
 }
