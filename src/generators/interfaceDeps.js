@@ -7,7 +7,7 @@ export default function renderInterfaceDeps(definition){
 
   let str = '';
   interfaceDeps.forEach(dep => {
-    str += `import ${dep}InterfaceType from '../interfaces/${dep};'\n`
+    str += `import ${dep}InterfaceType from '../interfaces/${dep}';\n`
   });
   return str
 }
